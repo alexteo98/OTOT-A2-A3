@@ -29,12 +29,6 @@ kubectl get nodes -L ingress-ready
 printf "\n\n"
 
 
-echo "|===============================|"
-echo "|     Loading Image to Kind     |"
-echo "|===============================|"
-kind load docker-image node-web-app:v1 --name kind-1
-printf "\n\n"
-
 
 echo "|======================================|"
 echo "|     Applying Deployment Manifest     |"
@@ -85,6 +79,9 @@ echo "|     Viewing Service     |"
 echo "|=========================|"
 kubectl get svc
 printf "\n\n"
+
+echo Sleeping for 10s...
+sleep 10
 
 
 echo "|===================================|"

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: node-web-app:v1
+          image: alexteo98/homeserver
           ports:
             - name: http
               containerPort: 8080
