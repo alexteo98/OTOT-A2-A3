@@ -15,9 +15,6 @@ Student Number: A0221444R
 
 ## Task A2.2
 ### Deploy Docker image to Kubernetes as a Deployment with 3 replicas exposed by a Service object
-1. Load Docker image to Kind
-    1. `kind load docker-image node-web-app:v1 --name kind-1`
-![Loading Image](./images/loading-images-to-kind.JPG)
 1. Applying Deployment Manifest
     1. `kubectl apply -f ./manifests/deployment.yaml`
 2. Viewing Deployment
