@@ -28,12 +28,12 @@ Student Number: A0221444R
 ### Deploy Docker image as zone-aware manner
 1. Creating Zone Aware Deployment
     1. `kubectl apply -f ./manifests/backend-zone-aware.yaml`
-1. Updating Ingress
-    1. `kubectl apply -f ./manifests/ingress-zone-aware.yaml`
+1. Create new Service
+    1. `kubectl apply -f ./manifests/service-zone-aware.yaml`
 2. Viewing Pods
     1. `kubectl get po -lapp=backend-zone-aware -owide --sort-by='.spec.nodeName'`
-![View Deployments](./images/view-zone-aware.jpg)
+![View Deployments](./images/view-zone-aware.JPG)
 
 
 ## Deployed Site
-![Deployed Site](./images/deployed-site-zone-aware.jpg)
+![Deployed Site](./images/deployed-site-zone-aware.JPG)

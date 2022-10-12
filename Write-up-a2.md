@@ -19,12 +19,12 @@ Student Number: A0221444R
     1. `kubectl apply -f ./manifests/deployment.yaml`
 2. Viewing Deployment
     1. `kubectl get deploy`
-![View Deployments](./images/view-deployment.jpg)
+![View Deployments](./images/view-deployment.JPG)
 2. Applying Service Manifest
     1. `kubectl apply -f ./manifests/service.yaml`
 3. Viewing Service
     1. `kubectl get svc`
-![View Services](./images/view-service.jpg)
+![View Services](./images/view-service.JPG)
 
 ## Task A2.3 
 ### Running the Nginx reverse proxy
@@ -32,12 +32,12 @@ Student Number: A0221444R
     1. `kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/kind/deploy.yaml`
 1. Viewing Ingress-Controller 
     1. `kubectl -n ingress-nginx get deploy`
-![View Ingress-Controller](./images/view-ingress-controller.jpg)
+![View Ingress-Controller](./images/view-ingress-controller.JPG)
 2. Applying Ingress Manifest
     1. `kubectl apply -f ./manifests/ingress.yaml`
 3. Viewing Ingress
     1. `kubectl get ingress`
-![View Ingress](./images/view-ingress.jpg)
+![View Ingress](./images/view-ingress.JPG)
 
 ## Deployed Site
-![Deployed Site](./images/deployed-site.jpg)
+![Deployed Site](./images/deployed-site.JPG)
